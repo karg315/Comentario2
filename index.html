@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap y Comentario</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1><span>Comentario de Ingeniería C2</span></h1>
+        <h4 style="text-align: center;"><span class="badge badge-info">By: Kevin Rodriguez</span></h4>
+    </header>
+
+    <div class="container">
+        <!--Menú con las 3 opciones verticales-->
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-resumen-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-resumen" type="button" role="tab" aria-controls="v-pills-resumen"
+                    aria-selected="true">Resumen</button>
+                <button class="nav-link" id="v-pills-comentario-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-comentario" type="button" role="tab" aria-controls="v-pills-comentario"
+                    aria-selected="false">Comentario</button>
+                <button class="nav-link" id="v-pills-referencias-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-referencias" type="button" role="tab" aria-controls="v-pills-referencias"
+                    aria-selected="false">Referencias</button>
+            </div>
+
+            <!--Contenido del menú-->
+            <div class="tab-content" id="v-pills-tabContent">
+                <!--Contenido de Resumen-->
+                
+                    <div class="tab-pane fade show active" id="v-pills-resumen" role="tabpanel"
+                        aria-labelledby="v-pills-resumen-tab" tabindex="0">
+                        
+                        <h2>Resumenes de los vídeos</h2>
+                        <br>
+                        <!--Acordión del Resumen-->
+                        <div class="accordion" id="accordionResumen">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOneResumen">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOneResumen" aria-expanded="true" aria-controls="collapseOneResumen">
+                                            Vídeo: "Arnold Schwarzenegger's 2017 University of Houston Commencement Address"
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOneResumen" class="accordion-collapse collapse show" aria-labelledby="headingOneResumen"
+                                        data-bs-parent="#accordionResumen">
+                                        <div class="accordion-body">
+                                            Arnold Schwarzenegger en el inicio de su discurso agradece a todos los asistentes la presencia y reconoce la labor que lleva a cabo la presidenta de la Universidad de Houston, pues ella es inmigrante y ha alcanzado varios logros. Procede a agradecer a los padres de los estudiantes, profesores y más personal de la universidad, siguiendo con la pregunta que se estarían haciendo los estudiantes, si es mi día, ¿por qué Arnold está agradeciendo a todos los demás?
+                                            <br>Continúa diciendo que lo pueden llamar como quieran, Arnold, Schwarzenegger, Terminator, entre otros apodos alusivos a sus apariciones en cine, pero nunca, un hombre hecho a su propio pulso, pues a lo largo de su vida ha tenido un montón de personas que lo han ayudado a crecer como persona y como profesional, entre tantos profesores, mentores, tutores, hasta sus propios padres que eran quienes más cuidaban de él. 
+                                            <br>Habla de su proceso entre distintos eventos que lo llevaron a estar donde hoy en día está, la inspiración para profundizar en el culturismo, como llegó a Estados Unidos, como lo ayudaron en sus primeros días, las dificultades para entrar al mundo de la pantalla grande.
+                                            <br>Al finalizar recalca que, así como cada persona recibió ayuda de muchos, como él ya puso su propio ejemplo, es momento de ayudar a otras personas, pues hay muchas que pueden estar muy agradecidas por incluso, la mínima acción que uno pueda realizar por ellos. Y agradecer a todas las personas que lo han ayudado a uno, por su labor y esfuerzo para que no sea mejor cada día.
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwoResumen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwoResumen" aria-expanded="false" aria-controls="collapseTwoResumen">
+                                            Vídeo: "TE DESEO MÁS CAOS DEL QUE PUEDAS AGUANTAR | DIEGO DREYFUS"
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwoResumen" class="accordion-collapse collapse" aria-labelledby="headingTwoResumen"
+                                        data-bs-parent="#accordionResumen">
+                                        <div class="accordion-body">
+                                            Diego Dreyfus, estudió Ingeniería Física, durante su charla inicia con la segunda ley de la termodinámica, la entropía, como muchos la denominan, el caos del universo. Con su lógica, define al universo como flojo, que distribuye la energía por parejo, y que tiende a ser desordenado y caótico. Y desarrolla ejemplos, para entender por qué el universo tiene estas características.
+                                            <br>Sigue por mencionar que nuestros pensamientos también tienden al caos, debido a factores que nos afectan día a día como un tsunami, y que debemos trabajar para u usar la energía del tsunami a nuestro favor o quitar los daños que pueda haber ocasionado el tsunami.
+                                            <br>Con ejemplos de sistemas abiertos y su caos, da a entender porque al alcanzar el nivel máximo de entropía que soporta un sistema, este tiene dos posibilidades, siendo una, muere el sistema, y la otra que se mejora. De aquí da a entender que el orden nace del caos.
+                                            <br>Por ende, una persona es como un sistema abierto, que puede llenarse de caos, y tener la posibilidad de crecer a un orden mayor. Debemos tener la capacidad de disipar más entropía,  de esta forma mejorar nosotros mismos.
+                                            <br>Por último, habla de que, al crecer a un orden mayor, se cambian las creencias, con ejemplos, como su actitud frente al lunes, como se deja influenciar por la opinión de la sociedad, y la importancia de tener sus criterios propios, ideas propias y pensamientos propios.
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                <div class="tab-pane fade" id="v-pills-comentario" role="tabpanel"
+                    aria-labelledby="v-pills-comentario-tab" tabindex="0">
+                    
+                    <h2>Comentario personal</h2> <br>
+
+                    <div class="accordion" id="accordionComentario">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOneComentario">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOneComentario" aria-expanded="true" aria-controls="collapseOneComentario">
+                                    Vídeo: "Arnold Schwarzenegger's 2017 University of Houston Commencement Address"
+                                </button>
+                            </h2>
+                            <div id="collapseOneComentario" class="accordion-collapse collapse show" aria-labelledby="headingOneComentario"
+                                data-bs-parent="#accordionComentario">
+                                <div class="accordion-body">
+                                    Ser agradecido siempre va a ser un elemento importante para una persona, pues le demuestra a la persona que le ayudó, que esa ayuda fue valiosa, invitando de manera indirecta que contine realizando esa misma acción, con esa persona o con otras.
+                                    <br>Y así podemos ver un efecto dominó, pues esta persona ayudará a otras personas, y la persona que ayudó en primer lugar puede ayudar a otra persona también. Ya no solo sería tipo dominó, sino sería visulamente un árbol, siendo caba buena acción una nueva rama de este árbol.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwoComentario">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwoComentario" aria-expanded="false" aria-controls="collapseTwoComentario">
+                                    Vídeo: "TE DESEO MÁS CAOS DEL QUE PUEDAS AGUANTAR | DIEGO DREYFUS"
+                                </button>
+                            </h2>
+                            <div id="collapseTwoComentario" class="accordion-collapse collapse" aria-labelledby="headingTwoComentario"
+                                data-bs-parent="#accordionComentario">
+                                <div class="accordion-body">
+                                    Ponernos nuevos desafios es una otra parte importante para que una persona mejore, por eso es famosa la frase, la práctica hace al maestro, nadie nace sabiendo hacer algo, todo lo vamos aprendiendo, y como decía Arnold, muchos profesores, tutores, familiares, amigos, intervienen en ese proceso, pero la decisión final la toma uno mismo.
+                                    <br>Esta decisión final se puede resumir en este caso, si salgo o no de mi zona de confort, pues al salir puedo enfrentarme a nuevos retos, nuevo caos, para poner más orden en nuestra vida, y ser mejores comparados a antes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThreeComentario">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThreeComentario" aria-expanded="false" aria-controls="collapseThreeComentario">
+                                    Comentario en relación a mi perfil en Ingeniería
+                                </button>
+                            </h2>
+                            <div id="collapseThreeComentario" class="accordion-collapse collapse" aria-labelledby="headingThreeComentario"
+                                data-bs-parent="#accordionComentario">
+                                <div class="accordion-body">
+                                    Mis padres en primer lugar se han esforzado para ayudarme en todo lo que necesitara, esto se veia muy reflejado en el colegio, pues estaban muy pendientes de mi, mis tareas pendientes, de como me iba, ahora en la universidad, puede ser lo anterior en menor medida, pues acá ya viene el ámbito económico, algo que si ellos no estaría en esta universidad. Y lo último en esta idea es el ámbito educativo, mis profesores me dieron los temas necesarios, las ideas que explicaban el mundo, para poder tener capacidad de razonamiento, pensamiento crítico, entre otros elementos necesarios en mi vida profesional.
+                                    <br>Ahora en la universidad me encuentro como líder de un grupo de estudio de la dirección de bienestar y experiencia del estudiante, de la asignatura Programación Orientada a Objetos, y considero esto una de muchas formas de devolver los favores que me han hecho personas para forjar mi aspecto educativo, pues compartir el conocimiento es un buen fin humano, incluso un acto de misericordia, enseñar al que no sabe, y pues con otros actos parecidos seguir agradeciendo a la sociedad de como me ha forjado.
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-referencias" role="tabpanel"
+                    aria-labelledby="v-pills-referencias-tab" tabindex="0">
+                    <h2>Referencias</h2> <br>
+
+                    <!--tarjetas para los links a youtube-->
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/arnold video min.png" class="card-img-top" alt="Imagen vídeo Arnold Schwarzenegger">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arnold Schwarzenegger's 2017 University of Houston Commencement Address</h5>
+                                    <p class="card-text"><small class="text-muted"><b>Subido por:</b> Arnold Schwarzenegger</small></p>
+                                    <p class="card-text"><small class="text-muted"><b>Subido en:</b> 16/05/2017</small></p>
+                                    <a href="https://youtu.be/RJsvR_gSEjg" target="_blank" class="btn btn-primary btn-lg" role="button" aria-disabled="false">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/diego video min.png" class="card-img-top" alt="Imagen vídeo Diego Dreyfus">
+                                <div class="card-body">
+                                    <h5 class="card-title">TE DESEO MÁS CAOS DEL QUE PUEDAS AGUANTAR | DIEGO DREYFUS</h5>
+                                    <p class="card-text"><small class="text-muted"><b>Subido por:</b> DIEGO DREYFUS</small></p>
+                                    <p class="card-text"><small class="text-muted"><b>Subido en:</b> 02/01/2018</small></p>
+                                    <a href="https://youtu.be/vIgtl27hQmk" target="_blank" class="btn btn-primary btn-lg" role="button" aria-disabled="false">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Kevin Rodriguez | Junior Web Developer</h3>	
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
